@@ -1,8 +1,8 @@
 import json
 import argparse
 import random
-import time
 import datetime
+from config import needed
 
 load = False
 
@@ -31,6 +31,8 @@ if (not load):
         locate = json.load(fh)
     with open('mails.json', 'r', encoding='utf-8') as fh:
         mails = json.load(fh)
+    with open('codes.json', 'r', encoding='utf-8') as fh:
+        codes = json.load(fh)
 
 
 def get_name():
@@ -46,11 +48,13 @@ def get_last_name():
 
 
 def get_location():
-    ind_1 = random.randrange(0, len(locate) - 1, 1)
-    keys = list(locate.keys())
-    key = keys[ind_1]
-    ind_2 = random.randrange(0, len(locate[key]) - 1, 1)
-    return (key, locate[key][ind_2])
+    ind_1 = random.sample(needed,1)[0]
+    iDict = codes[ind_1]
+    country = iDict["name"]
+    dial_code = iDict["dial_code"]
+    cities = locate[country]
+    city = cities[random.randrange(0, len(cities) - 1, 1)]
+    return (country, city, dial_code)
 
 
 def get_mail(name, last_name):
@@ -66,8 +70,12 @@ def get_mail(name, last_name):
     return mail
 
 
-def get_number():
-    return random.randrange(70000000000, 80000000000)
+def get_number(dial_code):
+    iCode = random.randrange(10, 1000)
+    iNum = random.randrange(1000000, 10000000)
+    number = "{}-{}-{}".format(dial_code, iCode, iNum)
+    return number
+
 
 def random_date(start, end):
     delta = end - start
@@ -80,6 +88,7 @@ def calc_age(born):
     today = datetime.datetime.today()
     return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
 
+
 if __name__ == "__main__":
     parser = createParser()
     namespace = parser.parse_args()
@@ -91,23 +100,24 @@ if __name__ == "__main__":
         last_name = get_last_name()
         location = get_location()
         mail = get_mail(name, last_name)
-        number = '+{}'.format(get_number())
+        number = get_number(location[2])
         now = datetime.datetime.today()
-        end = datetime.datetime(now.year-8,now.month,now.day)
+        end = datetime.datetime(now.year - 8, now.month, now.day)
         string_end = end.strftime("%d.%m.%Y")
-        today = end.strptime(string_end,"%d.%m.%Y")
-        start = datetime.datetime.strptime('1.1.1950',"%d.%m.%Y")
-        date = random_date(start,today)
+        today = end.strptime(string_end, "%d.%m.%Y")
+        start = datetime.datetime.strptime('1.1.1950', "%d.%m.%Y")
+        date = random_date(start, today)
         string_date = date.strftime("%d.%m.%Y")
         age = calc_age(date)
+        # file = open("file.txt",mode="a")
         file.write("Name:           {}\n"
                    "Last name:      {}\n"
                    "Birth date:     {}\n"
                    "Age:            {}\n"
                    "Country:        {}\n"
                    "City:           {}\n"
-                   "E-mail:         {}\n"
-                   "Number:         {}\n".
-                   format(name,last_name,string_date,age,location[0],location[1],mail,number))
+                   "Number:         {}\n"
+                   "E-mail:         {}\n".
+                   format(name, last_name, string_date, age, location[0], location[1], number, mail))
         file.write("\n")
     file.close()
