@@ -8,6 +8,7 @@
 * Консольная версия: generator.py
 * Словари: dicts/
 * Тесты: tests/
+* Пример использования как пакета: example_lib.py 
 ## Консольная версия
 Справка по запуску: ./generator.py -h/--help
 Пример запуска: ./generator.py -c 100 -f file.txt -a 30
