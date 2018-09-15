@@ -24,15 +24,15 @@ def createParser():
 
 if (not load):
     load = True
-    with open('names.json', 'r', encoding='utf-8') as fh:
+    with open('./dicts/names.json', 'r', encoding='utf-8') as fh:
         names = json.load(fh)
-    with open('last_names.json', 'r', encoding='utf-8') as fh:
+    with open('./dicts/last_names.json', 'r', encoding='utf-8') as fh:
         last_names = json.load(fh)
-    with open('location.json', 'r', encoding='utf-8') as fh:
+    with open('./dicts/location.json', 'r', encoding='utf-8') as fh:
         locate = json.load(fh)
-    with open('mails.json', 'r', encoding='utf-8') as fh:
+    with open('./dicts/mails.json', 'r', encoding='utf-8') as fh:
         mails = json.load(fh)
-    with open('codes.json', 'r', encoding='utf-8') as fh:
+    with open('./dicts/codes.json', 'r', encoding='utf-8') as fh:
         codes = json.load(fh)
 
 
