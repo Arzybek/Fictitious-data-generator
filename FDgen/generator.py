@@ -2,7 +2,7 @@ import json
 import argparse
 import random
 import datetime
-from config import needed
+from config import needed, mails
 from person import Person
 
 load = False
@@ -30,8 +30,6 @@ if (not load):
         last_names = json.load(fh)
     with open('./dicts/location.json', 'r', encoding='utf-8') as fh:
         locate = json.load(fh)
-    with open('./dicts/mails.json', 'r', encoding='utf-8') as fh:
-        mails = json.load(fh)
     with open('./dicts/codes.json', 'r', encoding='utf-8') as fh:
         codes = json.load(fh)
 
@@ -40,6 +38,42 @@ def get_name():
     ind = random.randrange(0, len(names) - 1, 1)
     name = names[ind]
     return name
+
+def make_sub():
+    length = random.randrange(1, 5)
+    sub = ""
+    for i in range(length):
+        i = random.randrange(0, 10)
+        sub = sub + str(i)
+    return sub
+
+def generate_password(name,last_name,date):
+    words_file = "./dicts/words.txt"
+    words = open(words_file).read().splitlines()
+    choice = random.randrange(0,4)
+    passwd = ""
+    if(choice==0):
+        index = random.randrange(0,len(words))
+        passwd = words[index]
+    elif(choice==1):
+        index = random.randrange(0,len(words))
+        sub = make_sub()
+        passwd = words[index]+sub
+    elif(choice==2):
+        sub = make_sub()
+        choose = random.randrange(0,2)
+        if(choose==0):
+            passwd = name + sub
+        else:
+            passwd = last_name + sub
+    elif(choice==3):
+        passwd = "{}{}{}".format(date.day,date.month,date.year)
+    if(len(passwd)>4):
+        return passwd
+    else:
+        index = random.randrange(0, len(words))
+        passwd = passwd + words[index]
+        return  passwd
 
 
 def get_last_name():
@@ -97,7 +131,8 @@ def create_person():
     today = end.strptime(string_end, "%d.%m.%Y")
     start = datetime.datetime.strptime('1.1.1950', "%d.%m.%Y")
     date = random_date(start, today)
-    profile = Person(name, last_name, location, mail, number, date)
+    passwd = generate_password(name,last_name,date)
+    profile = Person(name, last_name, location, mail, number, date, passwd)
     return profile
 
 

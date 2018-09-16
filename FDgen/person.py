@@ -2,7 +2,7 @@ import datetime
 
 
 class Person:
-    def __init__(self, name, ln, location, mail, num, bd):
+    def __init__(self, name, ln, location, mail, num, bd, passwd):
         self.name = name
         self.last_name = ln
         self.country = location[0]
@@ -11,6 +11,7 @@ class Person:
         self.number = num
         self.birth_date = bd
         self.strDate = self.birth_date.strftime("%d.%m.%Y")
+        self.password = passwd
         self.calc_age()
 
     def calc_age(self):
@@ -26,6 +27,7 @@ class Person:
                   "Country:        {}\n" \
                   "City:           {}\n" \
                   "Number:         {}\n" \
-                  "E-mail:         {}\n". \
-            format(self.name, self.last_name, self.strDate, self.age, self.country, self.city, self.number, self.mail)
+                  "E-mail:         {}\n" \
+                  "Password:       {}\n".\
+            format(self.name, self.last_name, self.strDate, self.age, self.country, self.city, self.number, self.mail, self.password)
         return strRepr
