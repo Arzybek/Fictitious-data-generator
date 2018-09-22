@@ -1,4 +1,5 @@
 import statistics as stats
+import os
 
 needed = {0, 2, 3, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 27, 28, 30, 33, 36, 37, 38, 40, 43, 44,
           47, 49, 52, 54, 55, 56, 57, 58, 61, 62, 63, 64, 67, 70, 72, 73, 75, 77, 79, 80, 81, 83, 84, 86, 87, 88, 90,
@@ -15,3 +16,4 @@ mails = ["@gmail.com",
          "@protonmail.com"]
 avg_age = 0
 dispersion = 5
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))

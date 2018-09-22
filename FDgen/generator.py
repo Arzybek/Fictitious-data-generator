@@ -2,13 +2,15 @@ import json
 import argparse
 import random
 import datetime
-from config import needed, mails, avg_age, dispersion
+from config import needed, mails, avg_age, dispersion, ROOT_DIR
 from person import Person
 import math
+import os
 
 load = False
 
 log_file = ""
+
 
 def createParser():
     parser = argparse.ArgumentParser(
@@ -25,27 +27,41 @@ def createParser():
     return parser
 
 
+def _reopen_log_file():
+    global log_file
+    pLog = os.path.join(ROOT_DIR, 'tests/dates.txt')
+    reopen = open(pLog, "w")
+    reopen.close()
+    log_file = open(pLog, "a")
+
+
 if (not load):
     load = True
-    with open('./dicts/names.json', 'r', encoding='utf-8') as fh:
+    pNames = os.path.join(ROOT_DIR, 'dicts/names.json')
+    pLast_names = os.path.join(ROOT_DIR, 'dicts/last_names.json')
+    pLocation = os.path.join(ROOT_DIR, 'dicts/location.json')
+    pCodes = os.path.join(ROOT_DIR, 'dicts/codes.json')
+    pWords = os.path.join(ROOT_DIR, 'dicts/words.txt')
+    with open(pNames, 'r', encoding='utf-8') as fh:
         names = json.load(fh)
-    with open('./dicts/last_names.json', 'r', encoding='utf-8') as fh:
+    with open(pLast_names, 'r', encoding='utf-8') as fh:
         last_names = json.load(fh)
-    with open('./dicts/location.json', 'r', encoding='utf-8') as fh:
+    with open(pLocation, 'r', encoding='utf-8') as fh:
         locate = json.load(fh)
-    with open('./dicts/codes.json', 'r', encoding='utf-8') as fh:
+    with open(pCodes, 'r', encoding='utf-8') as fh:
         codes = json.load(fh)
-    with open('./dicts/words.txt', 'r', encoding='utf-8') as fh:
+    with open(pWords, 'r', encoding='utf-8') as fh:
         words = fh.read().splitlines()
+    _reopen_log_file()
 
 
 def get_name():
-    ind = random.randrange(0, len(names) - 1, 1)
+    ind = random.randrange(0, len(names), 1)
     name = names[ind]
     return name
 
 
-def make_sub():
+def _make_sub():
     length = random.randrange(1, 5)
     sub = ""
     for i in range(length):
@@ -62,10 +78,10 @@ def generate_password(name, last_name, date):
         passwd = words[index]
     elif (choice == 1):
         index = random.randrange(0, len(words))
-        sub = make_sub()
+        sub = _make_sub()
         passwd = words[index] + sub
     elif (choice == 2):
-        sub = make_sub()
+        sub = _make_sub()
         choose = random.randrange(0, 2)
         if (choose == 0):
             passwd = name + sub
@@ -73,7 +89,7 @@ def generate_password(name, last_name, date):
             passwd = last_name + sub
     elif (choice == 3):
         letter = name[0].upper()
-        passwd = "{}{}{}{}".format(date.day, date.month, date.year,letter)
+        passwd = "{}{}{}{}".format(date.day, date.month, date.year, letter)
     if (len(passwd) > 4):
         return passwd
     else:
@@ -83,7 +99,7 @@ def generate_password(name, last_name, date):
 
 
 def get_last_name():
-    ind = random.randrange(0, len(last_names) - 1, 1)
+    ind = random.randrange(0, len(last_names), 1)
     last_name = last_names[ind]
     return last_name
 
@@ -94,14 +110,14 @@ def get_location():
     country = iDict["name"]
     dial_code = iDict["dial_code"]
     cities = locate[country]
-    city = cities[random.randrange(0, len(cities) - 1, 1)]
+    city = cities[random.randrange(0, len(cities), 1)]
     return (country, city, dial_code)
 
 
 def get_mail(name, last_name):
     name = name.lower()
     last_name = last_name.lower()
-    mail = random.randrange(0, len(mails) - 1)
+    mail = random.randrange(0, len(mails))
     mail = mails[mail]
     pick = random.randint(0, 1)
     if (pick == 0):
@@ -121,7 +137,7 @@ def get_number(dial_code):
 def get_avg_age(age, disp):
     age = int(random.gauss(age, disp))
     age = int(math.fabs(age))
-    log_file.writelines(str(age)+"\n")
+    log_file.writelines(str(age) + "\n")
     return age
 
 
@@ -143,11 +159,6 @@ def create_person():
     profile = Person(name, last_name, location, mail, number, birth_date, passwd)
     return profile
 
-def _reopen_log_file():
-    global log_file
-    reopen = open('./tests/dates.txt', "w")
-    reopen.close()
-    log_file = open('./tests/dates.txt', "a")
 
 if __name__ == "__main__":
     parser = createParser()
@@ -156,7 +167,10 @@ if __name__ == "__main__":
     avg_age = namespace.average
     if (namespace.dispersion):
         dispersion = namespace.dispersion
-    _reopen_log_file()
+    pLastLaunch = os.path.join(ROOT_DIR, 'tests/last_launch.txt')
+    log_launch = open(pLastLaunch, 'w')
+    log_launch.writelines([str(avg_age), '\n', str(dispersion)])
+    log_launch.close()
     for i in range(
             namespace.count
     ):
