@@ -1,6 +1,8 @@
 import unittest
 import sys
-
+import os
+import  json
+from config import  ROOT_DIR
 sys.path.append('..\..')
 import FDgen
 import datetime
@@ -44,3 +46,22 @@ class SimpleTestCase(unittest.TestCase):
         birth = datetime.datetime(2000, 1, 8)
         password = FDgen.generate_password("arzybek", "kazikulov", birth)
         self.assertTrue(len(password) > 4)
+
+    def test_address(self):
+        street = FDgen.get_address()
+        self.assertRegex(street,"[\w\s]+, [\d]+")
+
+    def test_education(self):
+        person = FDgen.create_person()
+        edu = person.education
+        age = person.age
+        flag = False
+        pEds = os.path.join(ROOT_DIR, 'dicts/educations.json')
+        with open(pEds, 'r', encoding='utf-8') as fh:
+            educations = json.load(fh)
+        for key, value in educations.items():
+            ranges = key.split(" ")
+            if(age > int(ranges[0]) and age <= int(ranges[1])):
+                if(edu in value):
+                    flag = True
+        self.assertTrue(flag)
