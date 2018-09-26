@@ -19,5 +19,5 @@ class TestAverage(unittest.TestCase):
         dispersion = float(log_launch.readline())
         log_launch.close()
         file.close()
-        self.assertAlmostEqual(avg, avg_age, delta=1)
-        self.assertAlmostEqual(disp, dispersion, delta=1)
+        self.assertAlmostEqual(avg, avg_age, delta=3)
+        self.assertAlmostEqual(disp, dispersion, delta=3)

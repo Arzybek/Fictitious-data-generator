@@ -2,7 +2,7 @@ import json
 import argparse
 import random
 import datetime
-from config import needed, mails, avg_age, dispersion, ROOT_DIR
+from config import needed, mails, avg_age, dispersion, ROOT_DIR, max_avg_age, max_disp
 from person import Person
 import math
 import os
@@ -42,6 +42,7 @@ if (not load):
     pLocation = os.path.join(ROOT_DIR, 'dicts/location.json')
     pCodes = os.path.join(ROOT_DIR, 'dicts/codes.json')
     pWords = os.path.join(ROOT_DIR, 'dicts/words.txt')
+    pStreets = os.path.join(ROOT_DIR, 'dicts/streets.txt')
     with open(pNames, 'r', encoding='utf-8') as fh:
         names = json.load(fh)
     with open(pLast_names, 'r', encoding='utf-8') as fh:
@@ -52,6 +53,8 @@ if (not load):
         codes = json.load(fh)
     with open(pWords, 'r', encoding='utf-8') as fh:
         words = fh.read().splitlines()
+    with open(pStreets, 'r', encoding='utf-8') as fh:
+        streets = fh.read().splitlines()
     _reopen_log_file()
 
 
@@ -59,6 +62,32 @@ def get_name():
     ind = random.randrange(0, len(names), 1)
     name = names[ind]
     return name
+
+
+def get_address():
+    ind = random.randrange(0, len(streets))
+    street = streets[ind]
+    rnd_choice = random.random()
+    if (rnd_choice >= 0.7 and rnd_choice < 0.8):
+        street = street + " Lane"
+    elif (rnd_choice >= 0.8 and rnd_choice <= 0.9):
+        street = street + " Avenue"
+    elif (rnd_choice > 0.9):
+        street = street + " Road"
+    elif (rnd_choice >= 0.6 and rnd_choice < 0.7):
+        street = street + " Drive"
+    else:
+        street = street + " St"
+    rnd_num = random.random()
+    num_house = 0
+    if (rnd_num <= 0.5):
+        num_house = random.randrange(1, 51)
+    elif (rnd_num > 0.5 and rnd_num <= 0.8):
+        num_house = random.randrange(100, 171)
+    else:
+        num_house = random.randrange(500, 601)
+    street = street + ", {}".format(num_house)
+    return street
 
 
 def _make_sub():
@@ -148,6 +177,13 @@ def create_person():
     mail = get_mail(name, last_name)
     number = get_number(location[2])
 
+    if (avg_age > max_avg_age):
+        print("Age is too big")
+        raise ValueError
+    if (dispersion > avg_age or dispersion >= max_disp):
+        print("Dispersion is bigger than average age")
+        raise ValueError
+
     age = get_avg_age(avg_age, dispersion)
     now = datetime.datetime.today()
     year_date = datetime.datetime(now.year - age, 1, 1)
@@ -156,7 +192,8 @@ def create_person():
     birth_date = year_date + datetime.timedelta(seconds=delta_sec)
 
     passwd = generate_password(name, last_name, birth_date)
-    profile = Person(name, last_name, location, mail, number, birth_date, passwd)
+    adress = get_address()
+    profile = Person(name, last_name, location, mail, number, birth_date, passwd, adress)
     return profile
 
 
