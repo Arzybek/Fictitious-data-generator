@@ -8,8 +8,13 @@
 * Консольная версия: generator.py
 * Словари: dicts/
 * Тесты: tests/
-* Проверка среднего: /tests/test_average.py
 * Пример использования как пакета: example_lib.py 
+## Структура
+* Config file: config.py
+* Person class: person.py
+* Last launch params: /tests/last_launch.txt
+* Birth dates from last generation (needed for test_average): /tests/dates.txt
+* Проверка среднего: /tests/test_average.py
 ## Консольная версия
 Справка по запуску: ./generator.py -h/--help
 
