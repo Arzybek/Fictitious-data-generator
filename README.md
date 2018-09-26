@@ -12,6 +12,7 @@
 ## Структура
 * Config file: config.py
 * Person class: person.py
+* Main: generator.py
 * Last launch params: /tests/last_launch.txt
 * Birth dates from last generation (needed for test_average): /tests/dates.txt
 * Проверка среднего: /tests/test_average.py
