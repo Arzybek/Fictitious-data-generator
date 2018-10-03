@@ -1,9 +1,13 @@
 import unittest
 import sys
-sys.path.append('..\..')
 import config
+import os
 config.avg_age = 228
 config.dispersion = 150
+
+path = os.path.abspath('..')
+path = os.path.dirname(path)
+sys.path.append(path)
 import FDgen
 
 class ExpectedExceptionTestCase(unittest.TestCase):

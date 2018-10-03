@@ -14,7 +14,7 @@ mails = ["@gmail.com",
          "@inbox.com",
          "@yahoo.com",
          "@protonmail.com"]
-avg_age = 5
+avg_age = 10
 dispersion = 5
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 max_avg_age = 145

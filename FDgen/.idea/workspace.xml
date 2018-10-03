@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d713ded-b65d-4f71-90b7-a08d7011a59d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dates.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/last_launch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/last_launch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicts/educations.json" beforeDir="false" afterPath="$PROJECT_DIR$/dicts/educations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person.py" beforeDir="false" afterPath="$PROJECT_DIR$/person.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +21,22 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/HelloWorld$example_library.coverage" NAME="example_library Coverage Results" MODIFIED="1536910637870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FD_gen$example_library.coverage" NAME="example_library Coverage Results" MODIFIED="1537052507927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FDgen$example_lib.coverage" NAME="example_lib Coverage Results" MODIFIED="1537989983503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FDgen$tests.coverage" NAME="tests Coverage Results" MODIFIED="1537995026722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$example_lib.coverage" NAME="example_lib Coverage Results" MODIFIED="1538577334412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FDgen$tests.coverage" NAME="tests Coverage Results" MODIFIED="1538577433149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/HelloWorld$program.coverage" NAME="program Coverage Results" MODIFIED="1536909407864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_test_exceptions_SimpleTestCase_test_max_avg.coverage" NAME="Unittests for test_exceptions.SimpleTestCase.test_max_avg Coverage Results" MODIFIED="1537996974881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$Unittests_in_tests_py.coverage" NAME="Unittests in tests.py Coverage Results" MODIFIED="1538577193838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp.coverage" NAME="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp Coverage Results" MODIFIED="1537997476553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$config.coverage" NAME="config Coverage Results" MODIFIED="1537607514026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FDgen$test_average.coverage" NAME="test_average Coverage Results" MODIFIED="1537993869272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$test_average.coverage" NAME="test_average Coverage Results" MODIFIED="1538577557340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_tests_TestCase_test_mails.coverage" NAME="Unittests for tests.TestCase.test_mails Coverage Results" MODIFIED="1537611026666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$example_library.coverage" NAME="example_library Coverage Results" MODIFIED="1537611045308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FDgen$test_exceptions.coverage" NAME="test_exceptions Coverage Results" MODIFIED="1537996717325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$test_exceptions.coverage" NAME="test_exceptions Coverage Results" MODIFIED="1538577547455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/HelloWorld$config.coverage" NAME="config Coverage Results" MODIFIED="1536909394380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_tests_SimpleTestCase.coverage" NAME="Unittests for tests.SimpleTestCase Coverage Results" MODIFIED="1537996555717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$Unittests_in_test_average_py.coverage" NAME="Unittests in test_average.py Coverage Results" MODIFIED="1538577579699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_tests_SimpleTestCase_test_exception.coverage" NAME="Unittests for tests.SimpleTestCase.test_exception Coverage Results" MODIFIED="1537994725535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/FDgen$Unittests_for_test_average_TestAverage_test_average.coverage" NAME="Unittests for test_average.TestAverage.test_average Coverage Results" MODIFIED="1537993915284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/FDgen$Unittests_for_test_average_TestAverage_test_average.coverage" NAME="Unittests for test_average.TestAverage.test_average Coverage Results" MODIFIED="1538577626534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/FDgen$Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg.coverage" NAME="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg Coverage Results" MODIFIED="1537997322579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="DatabaseView">
@@ -51,33 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dates.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/dates.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="last_launch.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/last_launch.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="test_average.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_average.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_average.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/tests/test_exceptions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -97,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -109,9 +91,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="example_lib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example_lib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -125,7 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>file</find>
       <find>bollocks</find>
       <find>111111111</find>
       <find>infinity</find>
@@ -155,6 +140,7 @@
       <find>Washington</find>
       <find>Road</find>
       <find>Church</find>
+      <find>Education:      -</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,21 +155,21 @@
         <option value="$PROJECT_DIR$/names.json" />
         <option value="$PROJECT_DIR$/last_names.json" />
         <option value="$PROJECT_DIR$/program.py" />
-        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/example_library.py" />
         <option value="$PROJECT_DIR$/dicts/words.txt" />
         <option value="$PROJECT_DIR$/dicts/streets.txt" />
-        <option value="$PROJECT_DIR$/example_lib.py" />
+        <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/dicts/educations.json" />
-        <option value="$PROJECT_DIR$/tests/test_average.py" />
         <option value="$PROJECT_DIR$/person.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/tests/tests.py" />
-        <option value="$PROJECT_DIR$/generator.py" />
-        <option value="$PROJECT_DIR$/tests/test_exceptions.py" />
         <option value="$PROJECT_DIR$/file.txt" />
-        <option value="$PROJECT_DIR$/tests/dates.txt" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/example_lib.py" />
+        <option value="$PROJECT_DIR$/tests/tests.py" />
+        <option value="$PROJECT_DIR$/tests/test_exceptions.py" />
+        <option value="$PROJECT_DIR$/tests/test_average.py" />
         <option value="$PROJECT_DIR$/tests/last_launch.txt" />
+        <option value="$PROJECT_DIR$/tests/dates.txt" />
       </list>
     </option>
   </component>
@@ -212,11 +198,6 @@
               <item name="FDgen" type="b2602c69:ProjectViewProjectNode" />
               <item name="FDgen" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FDgen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FDgen" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -243,7 +224,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp">
+  <component name="RunManager" selected="Python tests.Unittests for test_average.TestAverage.test_average">
+    <configuration name="test_average" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FDgen" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_average.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="test_exceptions" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FDgen" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,7 +263,26 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FDgen" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Unittests for test_average.TestAverage.test_average" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="FDgen" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,10 +293,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_exceptions.ExpectedExceptionTestCase.test_disp&quot;" />
+      <option name="_new_target" value="&quot;test_average.TestAverage.test_average&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_average.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="FDgen" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,51 +307,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_exceptions.ExpectedExceptionTestCase.test_max_avg&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests for test_exceptions.SimpleTestCase.test_max_avg" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="FDgen" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_exceptions.SimpleTestCase.test_max_avg&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests for tests.SimpleTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="FDgen" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.SimpleTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_average.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for tests.SimpleTestCase" />
       <item itemvalue="Python.test_exceptions" />
-      <item itemvalue="Python tests.Unittests for test_exceptions.SimpleTestCase.test_max_avg" />
-      <item itemvalue="Python tests.Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" />
-      <item itemvalue="Python tests.Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python.test_average" />
+      <item itemvalue="Python tests.Unittests in test_average.py" />
+      <item itemvalue="Python tests.Unittests for test_average.TestAverage.test_average" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" />
-        <item itemvalue="Python tests.Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" />
-        <item itemvalue="Python tests.Unittests for test_exceptions.SimpleTestCase.test_max_avg" />
+        <item itemvalue="Python tests.Unittests for test_average.TestAverage.test_average" />
+        <item itemvalue="Python tests.Unittests in test_average.py" />
+        <item itemvalue="Python.test_average" />
         <item itemvalue="Python.test_exceptions" />
-        <item itemvalue="Python tests.Unittests for tests.SimpleTestCase" />
+        <item itemvalue="Python.tests" />
       </list>
     </recent_temporary>
   </component>
@@ -350,49 +341,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg - 2018.09.27 at 02h 26m 12s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg - 2018.09.27 at 02h 26m 26s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg - 2018.09.27 at 02h 26m 51s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg - 2018.09.27 at 02h 28m 26s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_max_avg - 2018.09.27 at 02h 28m 43s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_max_avg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp - 2018.09.27 at 02h 28m 51s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp - 2018.09.27 at 02h 29m 10s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp - 2018.09.27 at 02h 29m 48s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp - 2018.09.27 at 02h 31m 07s.xml">
-      <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_exceptions_ExpectedExceptionTestCase_test_disp - 2018.09.27 at 02h 31m 17s.xml">
       <configuration name="Unittests for test_exceptions.ExpectedExceptionTestCase.test_disp" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.10.02 at 15h 13m 30s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.10.02 at 15h 13m 35s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_average_py - 2018.10.02 at 15h 16m 42s.xml">
+      <configuration name="Unittests in test_average.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_average_py - 2018.10.02 at 15h 20m 29s.xml">
+      <configuration name="Unittests in test_average.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_average_py - 2018.10.02 at 15h 20m 57s.xml">
+      <configuration name="Unittests in test_average.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.10.03 at 19h 33m 14s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_average_py - 2018.10.03 at 19h 39m 40s.xml">
+      <configuration name="Unittests in test_average.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_average_TestAverage_test_average - 2018.10.03 at 19h 39m 53s.xml">
+      <configuration name="Unittests for test_average.TestAverage.test_average" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_average_TestAverage_test_average - 2018.10.03 at 19h 40m 27s.xml">
+      <configuration name="Unittests for test_average.TestAverage.test_average" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067115" side_tool="true" weight="0.32909605" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013423" side_tool="true" weight="0.32909605" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32909605" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32909605" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3295302" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32909605" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.16845638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4986577" weight="0.32909605" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32909605" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.17449665" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" side_tool="true" weight="0.3295302" />
       <window_info anchor="right" id="SciView" order="3" weight="0.3295302" />
@@ -406,6 +396,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +418,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tests/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -534,24 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dicts/words.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="1802" column="7" lean-forward="true" selection-start-line="1802" selection-start-column="7" selection-end-line="1802" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -566,13 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dicts/educations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -611,16 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -628,41 +608,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dicts/educations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/person.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="38" />
+        <state relative-caret-position="186">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="65" lean-forward="true" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/dates.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/last_launch.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_average.py">
+    <entry file="file://$PROJECT_DIR$/example_lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="34">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="28" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,19 +675,25 @@
     <entry file="file://$PROJECT_DIR$/tests/test_exceptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/last_launch.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/dates.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_average.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,11 +1,16 @@
 import statistics as stats
 import unittest
-import os
-from config import ROOT_DIR
+
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,parentdir)
+from config import  ROOT_DIR
 
 
 class TestAverage(unittest.TestCase):
     def test_average(self):
+        print(os.getcwd())
         file = open('dates.txt', 'r')
         data = file.readlines()
         dates = []

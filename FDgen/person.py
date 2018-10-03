@@ -18,6 +18,7 @@ class Person:
         self.password = passwd
         self.calc_age()
         self.address = address
+        self.education = "-"
         self.calc_education()
 
     def calc_age(self):
