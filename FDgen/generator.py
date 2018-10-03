@@ -55,7 +55,7 @@ if (not load):
         words = fh.read().splitlines()
     with open(pStreets, 'r', encoding='utf-8') as fh:
         streets = fh.read().splitlines()
-    _reopen_log_file()
+    # _reopen_log_file()
 
 
 def get_name():
@@ -166,7 +166,6 @@ def get_number(dial_code):
 def get_avg_age(age, disp):
     age = int(random.gauss(age, disp))
     age = int(math.fabs(age))
-    log_file.writelines(str(age) + "\n")
     return age
 
 
@@ -208,11 +207,15 @@ if __name__ == "__main__":
     log_launch = open(pLastLaunch, 'w')
     log_launch.writelines([str(avg_age), '\n', str(dispersion)])
     log_launch.close()
+    _reopen_log_file()
+
     for i in range(
             namespace.count
     ):
         person = create_person()
         file.write(str(person))
         file.write("\n")
+
+        log_file.writelines(str(person.age) + "\n")
     file.close()
     log_file.close()
